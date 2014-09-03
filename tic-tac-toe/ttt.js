@@ -8,12 +8,12 @@ window.onload = function(){
   var catsTimer = 0;
   
   var add_mark = function(){
-    if(timer % 2 == 0){
+    if(timer % 2 == 0 && this.innerHTML == "-"){
       var turn = "X";
-      this.innerHTML = turn;      
+      this.innerHTML = turn;
       timer++;
       catsTimer++;
-    }else if(timer % 2 == 1){
+    }else if(timer % 2 == 1 && this.innerHTML == "-"){
       var turn = "O";
       this.innerHTML = turn;
       timer++;
